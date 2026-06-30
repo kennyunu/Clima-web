@@ -4,7 +4,7 @@ const titulo = document.getElementById("titulo")
 const WEATHER= "a372e0208a2ded3c4467392870bf1d4d"
 
 function coordenadas(ciudad){
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=1&appid=${WEATHER}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=1&appid=${WEATHER}`)
     .then(function(respuesta) {
         return respuesta.json()
     })
